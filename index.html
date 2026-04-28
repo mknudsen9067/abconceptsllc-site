@@ -1,1 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>American Building Concepts LLC</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111827;
+      background: #ffffff;
+    }
+
+    header {
+      background: linear-gradient(180deg, #071b33 0%, #0f2a44 100%);
+      color: white;
+      text-align: center;
+      padding: 40px 20px 35px;
+      border-bottom: 5px solid #c8102e;
+    }
+
+    header img {
+      max-width: 650px;
+      width: 90%;
+      height: auto;
+      margin-bottom: 18px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin: 10px 0 8px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #e5e7eb;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 360px;
+      background: #071b33;
+      color: white;
+    }
+
+    .hero-text {
+      padding: 60px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-text h2 {
+      font-size: 44px;
+      line-height: 1.1;
+      margin: 0 0 20px;
+      text-transform: uppercase;
+    }
+
+    .hero-text span {
+      color: #ef233c;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #d1d5db;
+      max-width: 520px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #c8102e;
+      color: white;
+      padding: 15px 24px;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      width: fit-content;
+    }
+
+    .hero-image {
+      background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 45px 8%;
+      background: #fff;
+      text-align: center;
+      gap: 25px;
+    }
+
+    .service-card {
+      padding: 25px 15px;
+      border-right: 1px solid #ddd;
+    }
+
+    .service-card:last-child {
+      border-right: none;
+    }
+
+    .icon {
+      width: 65px;
+      height: 65px;
+      background: #c8102e;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .service-card h3 {
+      color: #071b33;
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .service-card p {
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      background: #071b33;
+      color: white;
+    }
+
+    .about-text {
+      padding: 55px 8%;
+    }
+
+    .about-text h4 {
+      color: #ef233c;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+    }
+
+    .about-text h2 {
+      font-size: 34px;
+      margin: 0 0 18px;
+      text-transform: uppercase;
+    }
+
+    .about-text p {
+      color: #d1d5db;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .about-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding: 45px;
+      background: #f3f4f6;
+    }
+
+    .about-gallery div {
+      min-height: 220px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 4px;
+    }
+
+    .img1 {
+      background-image: url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=600&q=80");
+    }
+
+    .img2 {
+      background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80");
+    }
+
+    .img3 {
+      background-image: url("https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80");
+    }
+
+    .cta {
+      background: #c8102e;
+      color: white;
+      padding: 45px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .cta h2 {
+      margin: 0;
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+
+    .cta p {
+      margin: 8px 0 0;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #071b33;
+      color: white;
+      padding: 40px 8% 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    footer h3 {
+      color: white;
+      text-transform: uppercase;
+      border-bottom: 2px solid #c8102e;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    footer p {
+      color: #d1d5db;
+      line-height: 1.8;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.2);
+      margin-top: 30px;
+      padding-top: 15px;
+      text-align: center;
+      color: #d1d5db;
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .hero,
+      .about,
+      .services,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        min-height: 260px;
+      }
+
+      .service-card {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .about-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .cta {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 30px;
+      }
+
+      .hero-text h2 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.png" alt="American Building Concepts LLC Logo">
+    <h1>American Building Concepts LLC</h1>
+    <p>Professionals You Can Count On</p>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Built on <span>Quality.</span><br>Focused on <span>You.</span></h2>
+      <p>
+        American Building Concepts LLC specializes in remodeling, renovations,
+        new construction, and full design-to-build services.
+      </p>
+      <a class="button" href="tel:3142033497">Get a Free Estimate</a>
+    </div>
+    <div class="hero-image"></div>
+  </section>
+
+  <section class="services">
+    <div class="service-card">
+      <div class="icon">⚒</div>
+      <h3>Remodeling</h3>
+      <p>Transforming homes and spaces with quality craftsmanship and attention to detail.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">⌂</div>
+      <h3>New Construction</h3>
+      <p>Custom builds managed with professionalism from concept to completion.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">✓</div>
+      <h3>Design to Build</h3>
+      <p>Seamless planning and construction under one reliable contractor.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">★</div>
+      <h3>Residential & Commercial</h3>
+      <p>Serving homeowners and businesses with dependable construction services.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h4>About Us</h4>
+      <h2>Trusted. Experienced. Dedicated to Excellence.</h2>
+      <p>
+        Established September 28, 2021, American Building Concepts LLC is
+        BBB A+ Rated & Accredited, licensed, and fully insured.
+      </p>
+      <p>
+        We are committed to delivering professional results, honest communication,
+        and construction work built to last.
+      </p>
+    </div>
+
+    <div class="about-gallery">
+      <div class="img1"></div>
+      <div class="img2"></div>
+      <div class="img3"></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div>
+      <h2>Ready to Build Something Great?</h2>
+      <p>Let’s bring your project to life.</p>
+    </div>
+    <a class="button" href="tel:3142033497">Call Now</a>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Contact</h3>
+        <p>
+          Michael Knudsen<br>
+          314-203-3497<br>
+          mknudsen9067@yahoo.com
+        </p>
+      </div>
+
+      <div>
+        <h3>Services</h3>
+        <p>
+          Remodeling<br>
+          New Construction<br>
+          Design to Build<br>
+          Residential & Commercial
+        </p>
+      </div>
+
+      <div>
+        <h3>Licensed & Insured</h3>
+        <p>
+          BBB A+ Rated & Accredited<br>
+          Licensed and fully insured<br>
+          Established 09/28/2021
+        </p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © 2025 American Building Concepts LLC. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
