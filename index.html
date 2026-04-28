@@ -6,9 +6,7 @@
   <title>American Building Concepts LLC</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -68,9 +66,7 @@
       text-transform: uppercase;
     }
 
-    .hero-text span {
-      color: #ef233c;
-    }
+    .hero-text span { color: #ef233c; }
 
     .hero-text p {
       font-size: 18px;
@@ -98,6 +94,46 @@
       background-position: center;
     }
 
+    .mission {
+      background: #ffffff;
+      padding: 70px 8%;
+      text-align: center;
+      border-bottom: 4px solid #c8102e;
+    }
+
+    .mission-container {
+      max-width: 950px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-left: 6px solid #c8102e;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    }
+
+    .mission h2 {
+      font-size: 34px;
+      color: #071b33;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .mission .quote {
+      font-size: 24px;
+      font-weight: bold;
+      color: #071b33;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    .mission .quote span { color: #c8102e; }
+
+    .mission p {
+      color: #4b5563;
+      line-height: 1.8;
+      margin-bottom: 18px;
+      font-size: 17px;
+    }
+
     .services {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -112,9 +148,7 @@
       border-right: 1px solid #ddd;
     }
 
-    .service-card:last-child {
-      border-right: none;
-    }
+    .service-card:last-child { border-right: none; }
 
     .icon {
       width: 65px;
@@ -149,9 +183,7 @@
       color: white;
     }
 
-    .about-text {
-      padding: 55px 8%;
-    }
+    .about-text { padding: 55px 8%; }
 
     .about-text h4 {
       color: #ef233c;
@@ -179,24 +211,72 @@
       background: #f3f4f6;
     }
 
-    .about-gallery div {
-      min-height: 220px;
+    .about-gallery div,
+    .gallery-grid div {
       background-size: cover;
       background-position: center;
       border-radius: 4px;
     }
 
-    .img1 {
-      background-image: url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=600&q=80");
+    .about-gallery div { min-height: 220px; }
+
+    .img1 { background-image: url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=600&q=80"); }
+    .img2 { background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80"); }
+    .img3 { background-image: url("https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80"); }
+
+    .gallery {
+      padding: 60px 8%;
+      text-align: center;
+      background: #ffffff;
     }
 
-    .img2 {
-      background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80");
+    .gallery h2,
+    .testimonials h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #071b33;
+      text-transform: uppercase;
     }
 
-    .img3 {
-      background-image: url("https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80");
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
     }
+
+    .gallery-grid div { height: 220px; }
+
+    .g1 { background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c"); }
+    .g2 { background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e"); }
+    .g3 { background-image: url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77"); }
+    .g4 { background-image: url("https://images.unsplash.com/photo-1494526585095-c41746248156"); }
+
+    .testimonials {
+      padding: 60px 8%;
+      background: #f9fafb;
+      text-align: center;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 25px;
+      border-left: 5px solid #c8102e;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .testimonial strong { color: #071b33; }
 
     .cta {
       background: #c8102e;
@@ -257,141 +337,30 @@
       .hero,
       .about,
       .services,
-      .footer-grid {
+      .footer-grid,
+      .gallery-grid,
+      .testimonial-grid {
         grid-template-columns: 1fr;
       }
 
-      .hero-image {
-        min-height: 260px;
-      }
+      .hero-image { min-height: 260px; }
 
       .service-card {
         border-right: none;
         border-bottom: 1px solid #ddd;
       }
 
-      .about-gallery {
-        grid-template-columns: 1fr;
-      }
+      .about-gallery { grid-template-columns: 1fr; }
 
       .cta {
         flex-direction: column;
         text-align: center;
       }
 
-      header h1 {
-        font-size: 30px;
-      }
+      header h1 { font-size: 30px; }
 
-      .hero-text h2 {
-        font-size: 34px;
-      }
-    }.mission {
-  background: #ffffff;
-  padding: 60px 8%;
-  text-align: center;
-}
-
-.mission-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.mission h2 {
-  font-size: 32px;
-  color: #071b33;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.mission p {
-  color: #4b5563;
-  line-height: 1.8;
-  margin-bottom: 18px;
-  font-size: 17px;
-}<section class="mission>
- /* ===== GALLERY SECTION ===== */
-.gallery {
-  padding: 60px 8%;
-  text-align: center;
-  background: #ffffff;
-}
-
-.gallery h2,
-.testimonials h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-  color: #071b33;
-  text-transform: uppercase;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-}
-
-.gallery-grid div {
-  height: 220px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 4px;
-}
-
-/* SAMPLE IMAGES (you can replace later) */
-.g1 {
-  background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
-}
-
-.g2 {
-  background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
-}
-
-.g3 {
-  background-image: url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77");
-}
-
-.g4 {
-  background-image: url("https://images.unsplash.com/photo-1494526585095-c41746248156");
-}
-
-/* ===== TESTIMONIALS ===== */
-.testimonials {
-  padding: 60px 8%;
-  background: #f9fafb;
-  text-align: center;
-}
-
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-
-.testimonial {
-  background: white;
-  padding: 25px;
-  border-left: 5px solid #c8102e;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  text-align: left;
-}
-
-.testimonial p {
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-.testimonial strong {
-  color: #071b33;
-}
-
-/* ===== MOBILE FIX ===== */
-@media (max-width: 850px) {
-  .gallery-grid,
-  .testimonial-grid {
-    grid-template-columns: 1fr;
-  }
-}
+      .hero-text h2 { font-size: 34px; }
+    }
   </style>
 </head>
 
@@ -404,35 +373,29 @@
   </header>
 
   <section class="hero">
-    <section class="mission">
-  <div class="mission-container">
-    <h2>Our Mission</h2>
-    <p>
-      At American Building Concepts LLC, we are committed to being a different kind of construction company—one that puts our customers’ needs, vision, and budget first.
-    </p>
-    <p>
-      We understand that homeowners and business owners have many choices when selecting a contractor. That’s why we’ve built our reputation on transparency, integrity, and delivering exceptional value without compromise.
-    </p>
-    <p>
-      Unlike many in the industry, we do not rely on low bids to win projects only to increase costs later through excessive change orders. Our pricing is competitive, honest, and structured to reflect the true scope of work from the beginning.
-    </p>
-    <p>
-      The only time costs change is when a client chooses to upgrade or add to their project. If unforeseen challenges arise that were not visible at the start, we take responsibility and absorb those costs whenever possible—providing our clients with peace of mind and confidence throughout the entire process.
-    </p>
-    <p>
-      Our mission is simple: deliver high-quality craftsmanship, maintain clear and honest communication, and ensure every client feels confident they made the right choice.
-    </p>
-  </div>
-</section>
     <div class="hero-text">
       <h2>Built on <span>Quality.</span><br>Focused on <span>You.</span></h2>
       <p>
         American Building Concepts LLC specializes in remodeling, renovations,
         new construction, and full design-to-build services.
       </p>
-      <<a class="button" href="tel:3142033497">Get a Free Estimate</a>>
+      <a class="button" href="tel:3142033497">Get a Free Estimate</a>
     </div>
     <div class="hero-image"></div>
+  </section>
+
+  <section class="mission">
+    <div class="mission-container">
+      <h2>Our Mission</h2>
+      <div class="quote">
+        “A different kind of construction company — built on
+        <span>honesty, quality, and customer peace of mind.</span>”
+      </div>
+      <p>At American Building Concepts LLC, we focus on our customers’ needs, vision, and budget from the very beginning.</p>
+      <p>We understand that homeowners and business owners have many choices when selecting a contractor. That is why we work hard to stand above the rest through honest communication, dependable service, and high-quality craftsmanship.</p>
+      <p>We do not deceive customers with low bids just to win jobs and then overwhelm them with unnecessary change orders later. Our pricing is honest, competitive, and built around the true scope of work.</p>
+      <p>The only time a change order is issued is when the customer chooses to add something to the project. If we underbid an issue we could see and it costs us more, we absorb that cost whenever possible — giving our customers confidence and peace of mind.</p>
+    </div>
   </section>
 
   <section class="services">
@@ -441,19 +404,16 @@
       <h3>Remodeling</h3>
       <p>Transforming homes and spaces with quality craftsmanship and attention to detail.</p>
     </div>
-
     <div class="service-card">
       <div class="icon">⌂</div>
       <h3>New Construction</h3>
       <p>Custom builds managed with professionalism from concept to completion.</p>
     </div>
-
     <div class="service-card">
       <div class="icon">✓</div>
       <h3>Design to Build</h3>
       <p>Seamless planning and construction under one reliable contractor.</p>
     </div>
-
     <div class="service-card">
       <div class="icon">★</div>
       <h3>Residential & Commercial</h3>
@@ -465,121 +425,67 @@
     <div class="about-text">
       <h4>About Us</h4>
       <h2>Trusted. Experienced. Dedicated to Excellence.</h2>
-      <p>
-        Established September 28, 2021, American Building Concepts LLC is
-        BBB A+ Rated & Accredited, licensed, and fully insured.
-      </p>
-      <p>
-        We are committed to delivering professional results, honest communication,
-        and construction work built to last.
-      </p>
+      <p>Established September 28, 2021, American Building Concepts LLC is BBB A+ Rated & Accredited, licensed, and fully insured.</p>
+      <p>We are committed to delivering professional results, honest communication, and construction work built to last.</p>
     </div>
-
     <div class="about-gallery">
       <div class="img1"></div>
       <div class="img2"></div>
       <div class="img3"></div>
     </div>
   </section>
-<section class="testimonials">
-  <h2>What Our Clients Say</h2>
 
-  <div class="testimonial-grid">
-
-    <div class="testimonial">
-      <p>"American Building Concepts exceeded our expectations. Honest pricing, no surprises, and high-quality work."</p>
-      <strong>- Homeowner, St. Louis</strong>
+  <section class="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <div class="g1"></div>
+      <div class="g2"></div>
+      <div class="g3"></div>
+      <div class="g4"></div>
     </div>
+  </section>
 
-    <div class="testimonial">
-      <p>"They were upfront, professional, and delivered exactly what they promised. Rare to find in this industry."</p>
-      <strong>- Residential Client</strong>
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"American Building Concepts exceeded our expectations. Honest pricing, no surprises, and high-quality work."</p>
+        <strong>- Homeowner, St. Louis</strong>
+      </div>
+      <div class="testimonial">
+        <p>"They were upfront, professional, and delivered exactly what they promised."</p>
+        <strong>- Residential Client</strong>
+      </div>
+      <div class="testimonial">
+        <p>"No hidden costs, no games. Just solid work and great communication."</p>
+        <strong>- Commercial Client</strong>
+      </div>
     </div>
+  </section>
 
-    <div class="testimonial">
-      <p>"No hidden costs, no games. Just solid work and great communication from start to finish."</p>
-      <strong>- Commercial Client</strong>
-    </div>
-
-  </div>
-</section>
- <!-- PASTE STARTS HERE -->
-
-<section class="gallery">
-  <h2>Our Work</h2>
-
-  <div class="gallery-grid">
-    <div class="g1"></div>
-    <div class="g2"></div>
-    <div class="g3"></div>
-    <div class="g4"></div>
-  </div>
-</section>
-
-<section class="testimonials">
-  <h2>What Our Clients Say</h2>
-
-  <div class="testimonial-grid">
-
-    <div class="testimonial">
-      <p>"American Building Concepts exceeded our expectations. Honest pricing, no surprises, and high-quality work."</p>
-      <strong>- Homeowner, St. Louis</strong>
-    </div>
-
-    <div class="testimonial">
-      <p>"They were upfront, professional, and delivered exactly what they promised."</p>
-      <strong>- Residential Client</strong>
-    </div>
-
-    <div class="testimonial">
-      <p>"No hidden costs, no games. Just solid work and great communication."</p>
-      <strong>- Commercial Client</strong>
-    </div>
-
-  </div>
-</section>
-<section class="cta">
-  <div>
-    <h2>Ready to Build Something Great?</h2>
   <section class="cta">
     <div>
       <h2>Ready to Build Something Great?</h2>
       <p>Let’s bring your project to life.</p>
     </div>
-    <a class="button" href="tel:3142033497">Call Now</a>
+    <a class="button" href="tel:3142033497">Get a Free Estimate</a>
   </section>
 
   <footer>
     <div class="footer-grid">
       <div>
         <h3>Contact</h3>
-        <p>
-          Michael Knudsen<br>
-          314-203-3497<br>
-          mknudsen9067@yahoo.com
-        </p>
+        <p>Michael Knudsen<br>314-203-3497<br>mknudsen9067@yahoo.com</p>
       </div>
-
       <div>
         <h3>Services</h3>
-        <p>
-          Remodeling<br>
-          New Construction<br>
-          Design to Build<br>
-          Residential & Commercial
-        </p>
+        <p>Remodeling<br>New Construction<br>Design to Build<br>Residential & Commercial</p>
       </div>
-
       <div>
         <h3>Licensed & Insured</h3>
-        <p>
-          BBB A+ Rated & Accredited<br>
-          Licensed and fully insured<br>
-          Established 09/28/2021
-        </p>
+        <p>BBB A+ Rated & Accredited<br>Licensed and fully insured<br>Established 09/28/2021</p>
       </div>
     </div>
-
     <div class="copyright">
       © 2025 American Building Concepts LLC. All Rights Reserved.
     </div>
