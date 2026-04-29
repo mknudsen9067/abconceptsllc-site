@@ -11,23 +11,46 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      color: #111827;
+      color: #071b33;
       background: #ffffff;
     }
 
     header {
-      background: linear-gradient(180deg, #071b33 0%, #0f2a44 100%);
+      position: relative;
       color: white;
       text-align: center;
-      padding: 40px 20px 35px;
+      padding: 35px 20px 35px;
       border-bottom: 5px solid #c8102e;
+      background:
+        linear-gradient(rgba(7,27,51,.76), rgba(7,27,51,.90)),
+        url("https://images.unsplash.com/photo-1564594985645-4427056e22e2?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
     }
 
-    header img {
-      max-width: 650px;
+    header img.logo {
+      max-width: 700px;
       width: 90%;
       height: auto;
       margin-bottom: 18px;
+    }
+
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      background: white;
+      padding: 10px 16px;
+      border-radius: 10px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.25);
+      margin-bottom: 22px;
+    }
+
+    .trust-badge img {
+      max-width: 240px;
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     header h1 {
@@ -47,13 +70,13 @@
     .hero {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      min-height: 360px;
+      min-height: 380px;
       background: #071b33;
       color: white;
     }
 
     .hero-text {
-      padding: 60px 8%;
+      padding: 65px 8%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -72,7 +95,7 @@
       font-size: 18px;
       line-height: 1.6;
       color: #d1d5db;
-      max-width: 520px;
+      max-width: 540px;
     }
 
     .button {
@@ -88,14 +111,17 @@
     }
 
     .hero-image {
-      background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
-        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80");
+      background:
+        linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),
+        url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80");
       background-size: cover;
       background-position: center;
     }
 
     .mission {
-      background: #ffffff;
+      background:
+        radial-gradient(circle at top left, rgba(200,16,46,.10), transparent 35%),
+        linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
       padding: 70px 8%;
       text-align: center;
       border-bottom: 4px solid #c8102e;
@@ -105,9 +131,9 @@
       max-width: 950px;
       margin: 0 auto;
       background: #ffffff;
-      padding: 40px;
+      padding: 42px;
       border-left: 6px solid #c8102e;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 15px 35px rgba(0,0,0,.10);
     }
 
     .mission h2 {
@@ -137,7 +163,7 @@
     .services {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      padding: 45px 8%;
+      padding: 50px 8%;
       background: #fff;
       text-align: center;
       gap: 25px;
@@ -220,12 +246,12 @@
 
     .about-gallery div { min-height: 220px; }
 
-    .img1 { background-image: url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=600&q=80"); }
-    .img2 { background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80"); }
-    .img3 { background-image: url("https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80"); }
+    .img1 { background-image: url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80"); }
+    .img2 { background-image: url("https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=700&q=80"); }
+    .img3 { background-image: url("https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=700&q=80"); }
 
     .gallery {
-      padding: 60px 8%;
+      padding: 65px 8%;
       text-align: center;
       background: #ffffff;
     }
@@ -241,15 +267,15 @@
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
+      gap: 16px;
     }
 
-    .gallery-grid div { height: 220px; }
+    .gallery-grid div { height: 230px; }
 
-    .g1 { background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c"); }
-    .g2 { background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e"); }
-    .g3 { background-image: url("https://images.unsplash.com/photo-1556912173-3bb406ef7e77"); }
-    .g4 { background-image: url("https://images.unsplash.com/photo-1494526585095-c41746248156"); }
+    .g1 { background-image: url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=80"); }
+    .g2 { background-image: url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=700&q=80"); }
+    .g3 { background-image: url("https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=700&q=80"); }
+    .g4 { background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80"); }
 
     .testimonials {
       padding: 60px 8%;
@@ -367,7 +393,11 @@
 <body>
 
   <header>
-    <img src="logo.png" alt="American Building Concepts LLC Logo">
+    <div class="trust-badge">
+      <img src="bbb-rating.png" alt="BBB A+ Rated and Accredited Business">
+    </div>
+
+    <img class="logo" src="logo.png" alt="American Building Concepts LLC Logo">
     <h1>American Building Concepts LLC</h1>
     <p>Professionals You Can Count On</p>
   </header>
@@ -377,7 +407,7 @@
       <h2>Built on <span>Quality.</span><br>Focused on <span>You.</span></h2>
       <p>
         American Building Concepts LLC specializes in remodeling, renovations,
-        new construction, and full design-to-build services.
+        new construction, and full design-to-build services for homeowners and local businesses.
       </p>
       <a class="button" href="tel:3142033497">Get a Free Estimate</a>
     </div>
@@ -417,7 +447,7 @@
     <div class="service-card">
       <div class="icon">★</div>
       <h3>Residential & Commercial</h3>
-      <p>Serving homeowners and businesses with dependable construction services.</p>
+      <p>Serving homeowners and local businesses with dependable construction services.</p>
     </div>
   </section>
 
