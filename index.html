@@ -19,7 +19,7 @@
       position: relative;
       color: white;
       text-align: center;
-      padding: 38px 20px;
+      padding: 30px 20px;
       border-bottom: 5px solid #c8102e;
       background:
         linear-gradient(rgba(7,27,51,.88), rgba(7,27,51,.96)),
@@ -48,7 +48,7 @@
     }
 
     .logo {
-      max-width: 700px;
+      max-width: 620px;
       width: 90%;
       height: auto;
       margin-bottom: 18px;
@@ -73,7 +73,7 @@
         linear-gradient(135deg, rgba(7,27,51,.98), rgba(7,27,51,.92)),
         radial-gradient(circle at right, rgba(200,16,46,.25), transparent 35%);
       color: white;
-      padding: 75px 8%;
+      padding: 55px 8%;
       border-bottom: 5px solid #c8102e;
     }
 
@@ -114,6 +114,12 @@
       width: fit-content;
     }
 
+    .button:hover,
+    .quote-form button:hover,
+    .review-button:hover {
+      background: #a70d25;
+    }
+
     .hero-card {
       background: rgba(255,255,255,.07);
       border: 1px solid rgba(255,255,255,.18);
@@ -139,7 +145,7 @@
       background:
         radial-gradient(circle at top left, rgba(200,16,46,.10), transparent 35%),
         linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-      padding: 70px 8%;
+      padding: 55px 8%;
       text-align: center;
       border-bottom: 4px solid #c8102e;
     }
@@ -151,7 +157,7 @@
       max-width: 950px;
       margin: 0 auto;
       background: #ffffff;
-      padding: 42px;
+      padding: 34px;
       border-left: 6px solid #c8102e;
       box-shadow: 0 15px 35px rgba(0,0,0,.10);
     }
@@ -192,14 +198,14 @@
     .services {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      padding: 50px 8%;
+      padding: 40px 8%;
       background: #fff;
       text-align: center;
       gap: 25px;
     }
 
     .service-card {
-      padding: 25px 15px;
+      padding: 20px 15px;
       border-right: 1px solid #ddd;
     }
 
@@ -238,7 +244,9 @@
       color: white;
     }
 
-    .about-text { padding: 60px 8%; }
+    .about-text {
+      padding: 45px 8%;
+    }
 
     .about-text h4 {
       color: #ef233c;
@@ -262,7 +270,7 @@
       background:
         linear-gradient(rgba(243,244,246,.94), rgba(243,244,246,.94)),
         radial-gradient(circle at bottom right, rgba(200,16,46,.16), transparent 35%);
-      padding: 60px 8%;
+      padding: 45px 8%;
       display: grid;
       align-content: center;
       gap: 20px;
@@ -270,7 +278,7 @@
 
     .proof-box {
       background: white;
-      padding: 25px;
+      padding: 22px;
       border-left: 5px solid #c8102e;
       box-shadow: 0 10px 25px rgba(0,0,0,.06);
     }
@@ -288,39 +296,11 @@
       line-height: 1.6;
     }
 
-    .future-gallery,
-    .quote-form,
-    .google-reviews {
-      padding: 60px 8%;
-      background: #ffffff;
-      text-align: center;
-    }
-
-    .future-gallery-box {
-      max-width: 900px;
-      margin: 0 auto;
-      border: 2px dashed rgba(7,27,51,.25);
-      padding: 35px;
-      background: #f9fafb;
-    }
-
-    .future-gallery-box h2 {
-      color: #071b33;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .future-gallery-box p {
-      color: #4b5563;
-      line-height: 1.7;
-      margin: 0;
-    }
-
     .stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 25px;
-      padding: 50px 8%;
+      padding: 40px 8%;
       background: #f9fafb;
       text-align: center;
     }
@@ -345,10 +325,17 @@
       color: #071b33;
     }
 
-    .testimonials {
-      padding: 60px 8%;
+    .testimonials,
+    .quote-form,
+    .google-reviews {
+      padding: 45px 8%;
       background: #f9fafb;
       text-align: center;
+    }
+
+    .quote-form,
+    .google-reviews {
+      background: #ffffff;
     }
 
     .testimonial-grid {
@@ -359,7 +346,7 @@
 
     .testimonial {
       background: white;
-      padding: 25px;
+      padding: 22px;
       border-left: 5px solid #c8102e;
       box-shadow: 0 10px 25px rgba(0,0,0,0.05);
       text-align: left;
@@ -408,16 +395,10 @@
       width: 100%;
     }
 
-    .quote-form button:hover,
-    .review-button:hover,
-    .button:hover {
-      background: #a70d25;
-    }
-
     .cta {
       background: #c8102e;
       color: white;
-      padding: 45px 8%;
+      padding: 35px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -438,7 +419,7 @@
     footer {
       background: #071b33;
       color: white;
-      padding: 40px 8% 20px;
+      padding: 35px 8% 18px;
     }
 
     .footer-grid {
@@ -521,9 +502,7 @@
           American Building Concepts LLC specializes in remodeling, renovations,
           new construction, and full design-to-build services for homeowners and local businesses.
         </p>
-        <p>
-          ✔ Same-day response • ✔ Honest pricing • ✔ No surprises
-        </p>
+        <p>✔ Same-day response • ✔ Honest pricing • ✔ No surprises</p>
         <a class="button" href="tel:3142033497">Get a Free Estimate</a>
         <p style="margin-top:15px; font-size:20px; font-weight:bold;">
           Call Now: <span style="color:#ef233c;">314-203-3497</span>
@@ -621,6 +600,7 @@
       </p>
     </div>
   </section>
+
   <section class="stats">
     <div class="stat">
       <strong>95%+</strong>
@@ -693,12 +673,8 @@
   <section class="google-reviews">
     <div class="google-reviews-container">
       <h2>Google Reviews</h2>
-      <p>
-        Customer trust means everything to us. See what customers are saying about American Building Concepts LLC.
-      </p>
-      <p>
-        If we have completed work for you, we would be grateful for your review.
-      </p>
+      <p>Customer trust means everything to us. See what customers are saying about American Building Concepts LLC.</p>
+      <p>If we have completed work for you, we would be grateful for your review.</p>
       <a class="review-button" href="#" target="_blank">View or Leave a Google Review</a>
     </div>
   </section>
