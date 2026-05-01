@@ -43,8 +43,14 @@
     }
 
     .trust-badge img {
-      max-width: 155px;
+      max-width: 160px;
       display: block;
+      border: 0;
+      transition: .3s;
+    }
+
+    .trust-badge a:hover img {
+      transform: scale(1.05);
     }
 
     .logo {
@@ -102,7 +108,9 @@
       max-width: 600px;
     }
 
-    .button {
+    .button,
+    .review-button,
+    .quote-form button {
       display: inline-block;
       background: #c8102e;
       color: white;
@@ -111,12 +119,14 @@
       text-decoration: none;
       font-weight: bold;
       border-radius: 4px;
-      width: fit-content;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
     }
 
     .button:hover,
-    .quote-form button:hover,
-    .review-button:hover {
+    .review-button:hover,
+    .quote-form button:hover {
       background: #a70d25;
     }
 
@@ -244,9 +254,7 @@
       color: white;
     }
 
-    .about-text {
-      padding: 45px 8%;
-    }
+    .about-text { padding: 45px 8%; }
 
     .about-text h4 {
       color: #ef233c;
@@ -376,23 +384,9 @@
       resize: vertical;
     }
 
-    .quote-form button,
-    .review-button {
-      background: #c8102e;
-      color: white;
-      padding: 15px 24px;
-      border: none;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-      text-transform: uppercase;
-      text-decoration: none;
-      display: inline-block;
-      border-radius: 4px;
-    }
-
     .quote-form button {
       width: 100%;
+      font-size: 16px;
     }
 
     .cta {
@@ -414,6 +408,20 @@
     .cta p {
       margin: 8px 0 0;
       font-size: 18px;
+    }
+
+    .sticky-call {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      background: #c8102e;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      z-index: 9999;
     }
 
     footer {
@@ -476,6 +484,13 @@
         text-align: center;
       }
 
+      .sticky-call {
+        left: 15px;
+        right: 15px;
+        text-align: center;
+        bottom: 12px;
+      }
+
       header h1 { font-size: 30px; }
       .hero h2 { font-size: 34px; }
     }
@@ -486,7 +501,12 @@
 
   <header>
     <div class="trust-badge">
-      <img src="bbb-rating.png" alt="BBB A+ Rated and Accredited Business">
+      <a target="_blank"
+         title="American Building Concepts BBB Customer Reviews"
+         href="https://www.bbb.org/us/mo/saint-louis/profile/remodel-contractors/american-building-concepts-0734-1000046337/customer-reviews">
+        <img src="https://seal-stlouis.bbb.org/customer-reviews/badge-4-American-Building-Concepts-1000046337.png"
+             alt="BBB Customer Reviews">
+      </a>
     </div>
 
     <img class="logo" src="logo.png" alt="American Building Concepts LLC Logo">
@@ -675,7 +695,9 @@
       <h2>Google Reviews</h2>
       <p>Customer trust means everything to us. See what customers are saying about American Building Concepts LLC.</p>
       <p>If we have completed work for you, we would be grateful for your review.</p>
-      <a class="review-button" href="#" target="_blank">View or Leave a Google Review</a>
+      <a class="review-button" href="https://www.google.com/search?q=American+Building+Concepts+LLC+reviews" target="_blank">
+        View or Leave a Google Review
+      </a>
     </div>
   </section>
 
@@ -706,6 +728,8 @@
       © 2025 American Building Concepts LLC. All Rights Reserved.
     </div>
   </footer>
+
+  <a class="sticky-call" href="tel:3142033497">Call for Free Estimate</a>
 
 </body>
 </html>
