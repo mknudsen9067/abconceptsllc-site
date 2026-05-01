@@ -3,7 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>American Building Concepts LLC</title>
+
+  <title>American Building Concepts LLC | Remodeling & General Contractor St. Louis MO</title>
+
+  <meta name="description" content="American Building Concepts LLC is a BBB A+ Rated, licensed and fully insured general contractor serving St. Louis, Saint Louis County, St. Charles, Chesterfield, Ballwin, O'Fallon, and surrounding Missouri communities. We specialize in remodeling, renovations, additions, new construction, residential and commercial projects, and design-build services.">
+
+  <meta name="keywords" content="general contractor St Louis, remodeling contractor St Louis, residential remodeling St Louis, commercial remodeling St Louis, new construction St Louis, design build contractor Missouri, kitchen remodeling St Louis, bathroom remodeling St Louis, basement finishing St Louis, home additions St Louis, licensed insured contractor St Louis">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "American Building Concepts LLC",
+    "url": "https://abconceptsllc.com",
+    "telephone": "314-203-3497",
+    "email": "mknudsen9067@yahoo.com",
+    "foundingDate": "2021-09-28",
+    "areaServed": [
+      "St. Louis MO",
+      "Saint Louis County MO",
+      "St. Charles MO",
+      "Chesterfield MO",
+      "Ballwin MO",
+      "O'Fallon MO",
+      "Surrounding Missouri communities"
+    ],
+    "description": "BBB A+ Rated, licensed and fully insured general contractor specializing in remodeling, renovations, additions, new construction, residential and commercial construction, and design-build services."
+  }
+  </script>
 
   <style>
     * { box-sizing: border-box; }
@@ -163,7 +190,8 @@
     .mission-container,
     .privacy-container,
     .quote-form-container,
-    .google-reviews-container {
+    .google-reviews-container,
+    .service-area-container {
       max-width: 950px;
       margin: 0 auto;
       background: #ffffff;
@@ -172,15 +200,20 @@
       box-shadow: 0 15px 35px rgba(0,0,0,.10);
     }
 
+    h2 {
+      color: #071b33;
+      text-transform: uppercase;
+    }
+
     .mission h2,
     .privacy h2,
     .testimonials h2,
     .quote-form h2,
-    .google-reviews h2 {
+    .google-reviews h2,
+    .service-area h2,
+    .services-title h2 {
       font-size: 34px;
-      color: #071b33;
       margin-bottom: 20px;
-      text-transform: uppercase;
       text-align: center;
     }
 
@@ -197,7 +230,8 @@
     .mission p,
     .privacy p,
     .quote-form p,
-    .google-reviews p {
+    .google-reviews p,
+    .service-area p {
       color: #4b5563;
       line-height: 1.8;
       margin-bottom: 18px;
@@ -205,21 +239,35 @@
       text-align: center;
     }
 
+    .services-title {
+      padding: 45px 8% 10px;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    .services-title p {
+      color: #4b5563;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
     .services {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      padding: 40px 8%;
+      padding: 30px 8% 45px;
       background: #fff;
       text-align: center;
       gap: 25px;
     }
 
     .service-card {
-      padding: 20px 15px;
-      border-right: 1px solid #ddd;
+      padding: 22px 16px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 10px 25px rgba(0,0,0,.04);
+      background: white;
     }
-
-    .service-card:last-child { border-right: none; }
 
     .icon {
       width: 65px;
@@ -237,7 +285,7 @@
 
     .service-card h3 {
       color: #071b33;
-      font-size: 20px;
+      font-size: 19px;
       margin-bottom: 10px;
       text-transform: uppercase;
     }
@@ -263,6 +311,7 @@
     }
 
     .about-text h2 {
+      color: white;
       font-size: 34px;
       margin: 0 0 18px;
       text-transform: uppercase;
@@ -335,7 +384,8 @@
 
     .testimonials,
     .quote-form,
-    .google-reviews {
+    .google-reviews,
+    .service-area {
       padding: 45px 8%;
       background: #f9fafb;
       text-align: center;
@@ -402,6 +452,7 @@
     .cta h2 {
       margin: 0;
       font-size: 32px;
+      color: white;
       text-transform: uppercase;
     }
 
@@ -474,11 +525,6 @@
         margin-bottom: 20px;
       }
 
-      .service-card {
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-      }
-
       .cta {
         flex-direction: column;
         text-align: center;
@@ -517,10 +563,10 @@
   <section class="hero">
     <div class="hero-inner">
       <div>
-        <h2>Built on <span>Quality.</span><br>Focused on <span>You.</span></h2>
+        <h2>St. Louis Remodeling & <span>General Contracting</span></h2>
         <p>
-          American Building Concepts LLC specializes in remodeling, renovations,
-          new construction, and full design-to-build services for homeowners and local businesses.
+          American Building Concepts LLC provides residential and commercial remodeling, renovations, additions,
+          new construction, and design-build services throughout St. Louis and surrounding Missouri communities.
         </p>
         <p>✔ Same-day response • ✔ Honest pricing • ✔ No surprises</p>
         <a class="button" href="tel:3142033497">Get a Free Estimate</a>
@@ -532,10 +578,10 @@
       <div class="hero-card">
         <h3>Why Customers Choose Us</h3>
         <ul>
+          <li>BBB Customer Reviews and A+ Rated credibility</li>
+          <li>Licensed and fully insured</li>
           <li>Honest pricing from the start</li>
           <li>No surprise change-order games</li>
-          <li>Licensed and fully insured</li>
-          <li>BBB A+ Rated & Accredited</li>
           <li>Customer-first planning and communication</li>
         </ul>
       </div>
@@ -556,26 +602,54 @@
     </div>
   </section>
 
+  <section class="services-title">
+    <h2>Our Services</h2>
+    <p>
+      We provide full-service general contracting for homeowners and businesses, including remodeling,
+      renovations, new builds, additions, and design-build project delivery.
+    </p>
+  </section>
+
   <section class="services">
     <div class="service-card">
       <div class="icon">⚒</div>
-      <h3>Remodeling</h3>
-      <p>Transforming homes and spaces with quality craftsmanship and attention to detail.</p>
+      <h3>Home Remodeling</h3>
+      <p>Interior and exterior remodeling with quality craftsmanship, planning, and dependable communication.</p>
     </div>
     <div class="service-card">
       <div class="icon">⌂</div>
       <h3>New Construction</h3>
-      <p>Custom builds managed with professionalism from concept to completion.</p>
+      <p>Custom new builds managed professionally from concept through completion.</p>
     </div>
     <div class="service-card">
       <div class="icon">✓</div>
-      <h3>Design to Build</h3>
-      <p>Seamless planning and construction under one reliable contractor.</p>
+      <h3>Design-Build</h3>
+      <p>Streamlined design-to-build services with one reliable contractor managing the process.</p>
     </div>
     <div class="service-card">
       <div class="icon">★</div>
       <h3>Residential & Commercial</h3>
-      <p>Serving homeowners and local businesses with dependable construction services.</p>
+      <p>Construction services for homeowners, property owners, and local businesses.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">▣</div>
+      <h3>Kitchen Remodeling</h3>
+      <p>Kitchen updates, layout improvements, finishes, cabinets, flooring, and full renovation support.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">◆</div>
+      <h3>Bathroom Remodeling</h3>
+      <p>Bathroom renovations, upgrades, fixtures, tile, layout improvements, and finish work.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">▤</div>
+      <h3>Basements & Additions</h3>
+      <p>Basement finishing, living space expansion, additions, and functional upgrades.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">■</div>
+      <h3>Renovations</h3>
+      <p>Whole-home renovations, property improvements, repairs, and construction project management.</p>
     </div>
   </section>
 
@@ -583,7 +657,7 @@
     <div class="about-text">
       <h4>About Us</h4>
       <h2>Trusted. Experienced. Dedicated to Excellence.</h2>
-      <p>Established September 28, 2021, American Building Concepts LLC is BBB A+ Rated & Accredited, licensed, and fully insured.</p>
+      <p>Established September 28, 2021, American Building Concepts LLC is BBB A+ Rated, licensed, and fully insured.</p>
       <p>We are committed to delivering professional results, honest communication, and construction work built to last.</p>
     </div>
 
@@ -621,6 +695,18 @@
     </div>
   </section>
 
+  <section class="service-area">
+    <div class="service-area-container">
+      <h2>Service Areas</h2>
+      <p>
+        American Building Concepts LLC proudly serves St. Louis, Saint Louis County, and surrounding Missouri communities including St. Charles, Chesterfield, Ballwin, O'Fallon, and nearby areas.
+      </p>
+      <p>
+        We provide residential and commercial remodeling, kitchen remodeling, bathroom remodeling, basement finishing, additions, new construction, renovations, design-build services, and general contracting throughout the greater St. Louis region.
+      </p>
+    </div>
+  </section>
+
   <section class="stats">
     <div class="stat">
       <strong>95%+</strong>
@@ -628,7 +714,7 @@
     </div>
     <div class="stat">
       <strong>A+</strong>
-      <span>BBB Rated & Accredited</span>
+      <span>BBB Rated</span>
     </div>
     <div class="stat">
       <strong>100%</strong>
@@ -666,11 +752,14 @@
 
         <select name="project_type" required>
           <option value="">Project Type</option>
-          <option value="Remodeling">Remodeling</option>
+          <option value="Home Remodeling">Home Remodeling</option>
+          <option value="Kitchen Remodeling">Kitchen Remodeling</option>
+          <option value="Bathroom Remodeling">Bathroom Remodeling</option>
+          <option value="Basement Finishing">Basement Finishing</option>
+          <option value="Addition">Addition</option>
           <option value="New Construction">New Construction</option>
-          <option value="Design to Build">Design to Build</option>
-          <option value="Residential">Residential</option>
-          <option value="Commercial">Commercial</option>
+          <option value="Design-Build">Design-Build</option>
+          <option value="Commercial Remodeling">Commercial Remodeling</option>
           <option value="Other">Other</option>
         </select>
 
@@ -717,11 +806,11 @@
       </div>
       <div>
         <h3>Services</h3>
-        <p>Remodeling<br>New Construction<br>Design to Build<br>Residential & Commercial</p>
+        <p>Home Remodeling<br>Kitchen Remodeling<br>Bathroom Remodeling<br>New Construction<br>Design-Build</p>
       </div>
       <div>
-        <h3>Licensed & Insured</h3>
-        <p>BBB A+ Rated & Accredited<br>Licensed and fully insured<br>Established 09/28/2021</p>
+        <h3>Service Area</h3>
+        <p>Serving St. Louis, Saint Louis County, St. Charles, Chesterfield, Ballwin, O'Fallon, and surrounding Missouri communities.</p>
       </div>
     </div>
     <div class="copyright">
