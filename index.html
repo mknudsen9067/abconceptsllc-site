@@ -1,1256 +1,786 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>American Building Concepts LLC | Licensed General Contractor | Missouri & Illinois</title>
-
-<meta name="description" content="American Building Concepts LLC is a BBB A+ Rated, licensed and insured general contractor serving Missouri and Illinois. Residential remodeling, commercial construction, design-build, additions, new construction, insurance restoration, and commercial renovations.">
-
-<meta name="keywords" content="General Contractor Missouri, General Contractor Illinois, Remodeling St Louis, Commercial Contractor, Bathroom Remodeling, Kitchen Remodeling, Basement Finishing, Home Additions, Insurance Restoration">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-
-font-family:'Open Sans',sans-serif;
-background:#ffffff;
-color:#1f2937;
-line-height:1.7;
-
-}
-
-h1,h2,h3,h4{
-
-font-family:'Montserrat',sans-serif;
-
-}
-
-a{
-
-text-decoration:none;
-
-}
-
-img{
-
-max-width:100%;
-
-}
-
-.topbar{
-
-background:#c8102e;
-color:white;
-text-align:center;
-padding:12px;
-font-weight:700;
-font-size:15px;
-
-}
-
-header{
-
-background:#071b33;
-padding:35px 25px;
-text-align:center;
-border-bottom:5px solid #c8102e;
-
-}
-
-header img{
-
-max-width:700px;
-width:95%;
-
-}
-
-header h1{
-
-color:white;
-font-size:44px;
-margin-top:20px;
-
-}
-
-header p{
-
-color:#d1d5db;
-font-size:20px;
-letter-spacing:2px;
-text-transform:uppercase;
-
-}
-
-nav{
-
-position:sticky;
-top:0;
-background:white;
-display:flex;
-justify-content:center;
-gap:40px;
-padding:18px;
-border-bottom:1px solid #ddd;
-z-index:999;
-
-}
-
-nav a{
-
-font-weight:700;
-color:#071b33;
-text-transform:uppercase;
-font-size:14px;
-
-}
-
-nav a:hover{
-
-color:#c8102e;
-
-}
-
-.hero{
-
-background:linear-gradient(rgba(7,27,51,.95),rgba(7,27,51,.95)),url('hero.jpg');
-
-background-size:cover;
-background-position:center;
-
-padding:100px 8%;
-
-color:white;
-
-}
-
-.hero-wrap{
-
-display:grid;
-
-grid-template-columns:1.2fr .8fr;
-
-gap:50px;
-
-max-width:1250px;
-
-margin:auto;
-
-align-items:center;
-
-}
-
-.hero h2{
-
-font-size:62px;
-
-line-height:1.1;
-
-margin-bottom:25px;
-
-text-transform:uppercase;
-
-}
-
-.hero span{
-
-color:#ef233c;
-
-}
-
-.hero p{
-
-font-size:20px;
-
-color:#e5e7eb;
-
-margin-bottom:18px;
-
-}
-
-.button{
-
-display:inline-block;
-
-background:#c8102e;
-
-color:white;
-
-padding:16px 30px;
-
-border-radius:4px;
-
-font-weight:700;
-
-margin-right:15px;
-
-margin-top:20px;
-
-}
-
-.button:hover{
-
-background:#a20d24;
-
-}
-
-.button2{
-
-display:inline-block;
-
-border:2px solid white;
-
-padding:15px 30px;
-
-color:white;
-
-font-weight:700;
-
-margin-top:20px;
-
-}
-
-.button2:hover{
-
-background:white;
-
-color:#071b33;
-
-}
-
-.hero-card{
-
-background:white;
-
-padding:35px;
-
-color:#071b33;
-
-border-left:6px solid #c8102e;
-
-box-shadow:0 10px 35px rgba(0,0,0,.25);
-
-}
-
-.hero-card h3{
-
-margin-bottom:20px;
-
-}
-
-.hero-card ul{
-
-padding-left:20px;
-
-}
-
-.hero-card li{
-
-margin-bottom:12px;
-
-}
-
-section{
-
-padding:80px 8%;
-
-}
-
-.container{
-
-max-width:1250px;
-
-margin:auto;
-
-}
-
-.section-title{
-
-text-align:center;
-
-margin-bottom:55px;
-
-}
-
-.section-title h2{
-
-font-size:42px;
-
-margin-bottom:15px;
-
-color:#071b33;
-
-text-transform:uppercase;
-
-}
-
-.section-title p{
-
-font-size:19px;
-
-color:#555;
-
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>American Building Concepts LLC | Residential & Commercial Construction</title>
+
+  <meta name="description" content="American Building Concepts LLC provides residential and commercial construction, remodeling, additions, decks, bathrooms, basements, permit drawings, and light commercial renovation services in Missouri and Illinois." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f7f7f7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 18px 0;
+      border-bottom: 4px solid #c89b3c;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-wrap img {
+      width: 90px;
+      height: auto;
+      background: #fff;
+      border-radius: 6px;
+      padding: 5px;
+    }
+
+    .company-title h1 {
+      font-size: 26px;
+      line-height: 1.1;
+      letter-spacing: 0.5px;
+    }
+
+    .company-title p {
+      font-size: 14px;
+      color: #ddd;
+      margin-top: 4px;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+    }
+
+    nav a:hover {
+      color: #c89b3c;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 90px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 850px;
+      margin: 0 auto 30px;
+      color: #f1f1f1;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: #c89b3c;
+      color: #111;
+    }
+
+    .btn-primary:hover {
+      background: #e0b557;
+    }
+
+    .btn-secondary {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      background: #fff;
+      color: #111;
+    }
+          section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 34px;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      max-width: 750px;
+      margin: 0 auto;
+      color: #555;
+      font-size: 17px;
+    }
+
+    .about {
+      background: #fff;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .about-text p {
+      margin-bottom: 16px;
+      font-size: 17px;
+      color: #333;
+    }
+
+    .trust-box {
+      background: #111;
+      color: #fff;
+      border-radius: 8px;
+      padding: 30px;
+      border-top: 5px solid #c89b3c;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.16);
+    }
+
+    .trust-box h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #c89b3c;
+    }
+
+    .trust-box ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .trust-box li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .trust-box li:last-child {
+      border-bottom: none;
+    }
+
+    .services {
+      background: #f2f2f2;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 28px;
+      border-radius: 8px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      border-top: 4px solid #c89b3c;
+    }
+
+    .service-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #111;
+    }
+
+    .service-card p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    .bbb-section {
+      background: #fff;
+    }
+
+    .bbb-card {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 30px;
+      align-items: center;
+      background: #f7f7f7;
+      border-radius: 10px;
+      padding: 35px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .bbb-logo-box {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .bbb-logo-box img {
+      margin: 0 auto;
+      max-width: 160px;
+    }
+
+    .bbb-content h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+      color: #111;
+    }
+
+    .bbb-content p {
+      color: #444;
+      font-size: 17px;
+      margin-bottom: 12px;
+    }
+
+    .bbb-badge-text {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 8px;
+      border-left: 5px solid #c89b3c;
+    }
+          .process {
+      background: #111;
+      color: #fff;
+    }
+
+    .process .section-title h2 {
+      color: #fff;
+    }
+
+    .process .section-title p {
+      color: #ddd;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .process-step {
+      background: #1b1b1b;
+      padding: 25px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .process-step span {
+      display: inline-block;
+      width: 38px;
+      height: 38px;
+      background: #c89b3c;
+      color: #111;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 38px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .process-step h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .process-step p {
+      color: #ddd;
+      font-size: 15px;
+    }
+
+    .projects {
+      background: #fff;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #f7f7f7;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .project-image {
+      height: 190px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .project-content {
+      padding: 24px;
+    }
+
+    .project-content h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .project-content p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    .contact {
+      background: #f2f2f2;
+    }
+
+    .contact-card {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 35px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      text-align: center;
+      border-top: 5px solid #c89b3c;
+    }
+
+    .contact-card h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .contact-card p {
+      color: #444;
+      font-size: 17px;
+      margin-bottom: 12px;
+    }
+
+    .contact-info {
+      margin: 25px 0;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .contact-info strong {
+      color: #111;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: #fff;
+    }
+          @media (max-width: 900px) {
+      .about-grid,
+      .bbb-card {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid,
+      .project-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .service-grid,
+      .project-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .hero h2 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .company-title h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-<div class="topbar">
-
-Licensed & Insured • BBB A+ Rated • Serving Missouri & Illinois • Call (314) 203-3497
-
-</div>
-
-<header>
-
-<img src="logo.png" alt="American Building Concepts LLC Logo">
-
-<div style="margin-top:20px;display:flex;justify-content:center;align-items:center;gap:25px;flex-wrap:wrap;">
-
-    <img src="bbb-rating.png"
-         alt="BBB A+ Accredited Business"
-         style="height:75px;background:#fff;padding:6px;border-radius:6px;">
-
-</div>
-<h1>AMERICAN BUILDING CONCEPTS LLC</h1>
-
-<p>Residential • Commercial • Design-Build</p>
-
-</header>
-
-<nav>
-
-<a href="#">Home</a>
-
-<a href="#">Services</a>
-
-<a href="#">About</a>
-
-<a href="#">Process</a>
-
-<a href="#">Contact</a>
-
-</nav>
-
-<section class="hero">
-
-<div class="hero-wrap">
-
-<div>
-
-<h2>
-
-Building Confidence.<br>
-
-<span>Delivering Excellence.</span>
-
-</h2>
-
-<p>
-
-Trusted, licensed and insured general contractor serving homeowners and businesses throughout Missouri and Illinois.
-
-</p>
-
-<p>
-
-Residential Remodeling • Commercial Construction • Design-Build • Additions • Insurance Restoration
-
-</p>
-
-<a class="button" href="#">
-
-Request Consultation
-
-</a>
-
-<a class="button2" href="tel:3142033497">
-
-Call Now
-
-</a>
-
-</div>
-
-<div class="hero-card">
-
-<h3>Why Customers Choose Us</h3>
-
-<ul>
-
-<li>BBB A+ Rated & Accredited</li>
-
-<li>Licensed & Insured</li>
-
-<li>Serving Missouri & Illinois</li>
-
-<li>95% Referral-Based Business</li>
-
-<li>Residential & Commercial Expertise</li>
-
-<li>Professional Project Management</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</section>
-<section style="background:#c8102e;color:white;text-align:center;padding:18px 8%;font-weight:800;letter-spacing:.5px;">
-
-BBB A+ Rated & Accredited • Licensed & Insured • Missouri & Illinois • Residential • Commercial • Design-Build
-
-</section>
-
-<section id="about" style="background:#f9fafb;">
-
-<div class="container">
-
-<div style="background:white;padding:45px;border-left:6px solid #c8102e;box-shadow:0 15px 35px rgba(0,0,0,.08);text-align:center;">
-
-<h2 style="font-size:38px;color:#071b33;margin-bottom:25px;text-transform:uppercase;">
-
-Built on Trust, Quality & Accountability
-
-</h2>
-
-<p style="font-size:20px;font-weight:700;color:#071b33;margin-bottom:25px;">
-
-A different kind of construction company — built on honest pricing, strong communication, and customer peace of mind.
-
-</p>
-
-<p style="font-size:18px;color:#4b5563;margin-bottom:18px;">
-
-American Building Concepts LLC is a BBB A+ Rated, licensed and insured general contractor serving homeowners and businesses throughout Missouri and Illinois.
-
-</p>
-
-<p style="font-size:18px;color:#4b5563;margin-bottom:18px;">
-
-We do not rely on low bids to win jobs and then increase costs through excessive change orders. Our pricing is built around the true scope of work from the beginning.
-
-</p>
-
-<p style="font-size:18px;color:#4b5563;">
-
-Our projects are managed with strong quality-control standards to help work get completed correctly the first time, minimize inspection issues, prevent unnecessary delays, and keep projects moving forward efficiently.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="services">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Premium Construction Services</h2>
-
-<p>
-
-Residential and commercial construction services across Missouri and Illinois.
-
-</p>
-
-</div>
-
-<div class="service-grid">
-
-<div class="service-card">
-
-<div class="label">Residential</div>
-
-<h3>Residential Remodeling</h3>
-
-<p>Kitchens, bathrooms, basements, additions, decks, exterior upgrades, and full home renovations.</p>
-
-<a href="#contact">Request Estimate →</a>
-
-</div>
-
-<div class="service-card">
-
-<div class="label">Commercial</div>
-
-<h3>Commercial Construction</h3>
-
-<p>Tenant improvements, office renovations, retail build-outs, exterior upgrades, ADA improvements, and property enhancements.</p>
-
-<a href="#contact">Discuss Project →</a>
-
-</div>
-
-<div class="service-card">
-
-<div class="label">Planning</div>
-
-<h3>Design-Build Services</h3>
-
-<p>Concept development, scope planning, budget alignment, permit coordination, construction, and completion.</p>
-
-<a href="#contact">Start Planning →</a>
-
-</div>
-
-<div class="service-card">
-
-<div class="label">Restoration</div>
-
-<h3>Storm & Insurance Restoration</h3>
-
-<p>Wind, hail, tornado, and storm-related repair support with assessment, documentation, and reconstruction planning.</p>
-
-<a href="#contact">Get Help →</a>
-
-</div>
-
-<div class="service-card">
-
-<div class="label">Expansion</div>
-
-<h3>Additions & New Construction</h3>
-
-<p>Room additions, custom builds, garage additions, structural improvements, and complete new construction projects.</p>
-
-<a href="#contact">Build With Us →</a>
-
-</div>
-
-<div class="service-card">
-
-<div class="label">Specialty</div>
-
-<h3>Bathrooms, Kitchens & Basements</h3>
-
-<p>High-quality interior remodeling with careful planning, finish coordination, and detail-focused execution.</p>
-
-<a href="#contact">Request Consultation →</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-.service-grid{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:28px;
-
-}
-
-.service-card{
-
-background:white;
-
-padding:32px;
-
-border-left:6px solid #c8102e;
-
-box-shadow:0 12px 30px rgba(0,0,0,.08);
-
-min-height:260px;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:space-between;
-
-}
-
-.service-card .label{
-
-color:#c8102e;
-
-font-weight:800;
-
-text-transform:uppercase;
-
-letter-spacing:1px;
-
-font-size:13px;
-
-margin-bottom:12px;
-
-}
-
-.service-card h3{
-
-font-size:23px;
-
-color:#071b33;
-
-margin-bottom:15px;
-
-text-transform:uppercase;
-
-}
-
-.service-card p{
-
-color:#4b5563;
-
-font-size:17px;
-
-}
-
-.service-card a{
-
-color:#c8102e;
-
-font-weight:800;
-
-margin-top:20px;
-
-display:inline-block;
-
-}
-
-</style>
-<section style="background:#071b33;color:white;">
-
-<div class="container">
-
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;">
-
-<div>
-
-<h2 style="font-size:42px;color:white;margin-bottom:25px;text-transform:uppercase;">
-
-Professional Project Management From Start to Finish
-
-</h2>
-
-<p style="font-size:18px;color:#d1d5db;margin-bottom:20px;">
-
-Construction projects require more than labor. They require planning, communication, documentation, scheduling, code awareness, and accountability. American Building Concepts LLC manages the details so customers can feel confident throughout the process.
-
-</p>
-
-<p style="font-size:18px;color:#d1d5db;">
-
-Our goal is to identify issues early, keep expectations clear, coordinate the right trades, and keep projects moving forward with fewer surprises.
-
-</p>
-
-</div>
-
-<div>
-
-<div style="background:white;color:#071b33;padding:28px;margin-bottom:20px;border-left:6px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.20);">
-
-<h3 style="margin-bottom:12px;">Clear Scope & Budget Alignment</h3>
-
-<p>We define expectations before construction begins so customers understand exactly what is included.</p>
-
-</div>
-
-<div style="background:white;color:#071b33;padding:28px;margin-bottom:20px;border-left:6px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.20);">
-
-<h3 style="margin-bottom:12px;">Quality Control</h3>
-
-<p>Every phase is monitored to reduce rework, inspection issues, delays, and unnecessary costs.</p>
-
-</div>
-
-<div style="background:white;color:#071b33;padding:28px;border-left:6px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.20);">
-
-<h3 style="margin-bottom:12px;">Professional Communication</h3>
-
-<p>Customers receive honest updates, direct accountability, and responsive communication throughout the project.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="process">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Our Process</h2>
-
-<p>
-
-Every successful project starts with planning and ends with quality craftsmanship.
-
-</p>
-
-</div>
-
-<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px;">
-
-<div style="background:white;padding:30px;border-top:5px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<h3 style="margin-bottom:15px;color:#071b33;">01 Consultation</h3>
-
-<p>We discuss your goals, budget, timeline, and project expectations.</p>
-
-</div>
-
-<div style="background:white;padding:30px;border-top:5px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<h3 style="margin-bottom:15px;color:#071b33;">02 Planning</h3>
-
-<p>Scope development, design, permits, budgeting, scheduling, and material selection.</p>
-
-</div>
-
-<div style="background:white;padding:30px;border-top:5px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<h3 style="margin-bottom:15px;color:#071b33;">03 Construction</h3>
-
-<p>Professional project management, quality control, trade coordination, and progress updates.</p>
-
-</div>
-
-<div style="background:white;padding:30px;border-top:5px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<h3 style="margin-bottom:15px;color:#071b33;">04 Completion</h3>
-
-<p>Final walkthrough, attention to detail, customer satisfaction, and a finished project built to last.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section style="background:#f7f8fb;">
-
-<div class="container">
-
-<div style="background:white;padding:45px;border-left:6px solid #c8102e;box-shadow:0 15px 35px rgba(0,0,0,.08);text-align:center;">
-
-<h2 style="font-size:38px;color:#071b33;margin-bottom:25px;text-transform:uppercase;">
-
-Respecting Our Customers' Privacy
-
-</h2>
-
-<p style="font-size:18px;color:#4b5563;margin-bottom:18px;">
-
-We understand your home and business are personal. While many contractors depend on showcasing every project online, we respect customers who prefer their property remain private.
-
-</p>
-
-<p style="font-size:18px;color:#4b5563;">
-
-That trust has helped us build a business where more than 95% of our projects come from referrals, repeat customers, friends, family members, and long-term business relationships.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-<section id="areas">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Service Areas</h2>
-
-<p>American Building Concepts LLC proudly serves homeowners and businesses throughout Missouri and Illinois.</p>
-
-</div>
-
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;">
-
-<div style="background:white;padding:35px;border-left:6px solid #c8102e;box-shadow:0 12px 30px rgba(0,0,0,.08);">
-
-<h3 style="font-size:24px;color:#071b33;margin-bottom:15px;">Missouri Service Areas</h3>
-
-<p>Serving St. Louis and surrounding Missouri communities, including:</p>
-
-<ul style="margin-top:15px;padding-left:20px;color:#4b5563;">
-
-<li>St. Louis</li>
-
-<li>St. Louis County</li>
-
-<li>St. Charles</li>
-
-<li>Chesterfield</li>
-
-<li>Ballwin</li>
-
-<li>O’Fallon</li>
-
-<li>Wildwood</li>
-
-<li>Kirkwood</li>
-
-<li>Webster Groves</li>
-
-<li>Town and Country</li>
-
-</ul>
-
-</div>
-
-<div style="background:white;padding:35px;border-left:6px solid #c8102e;box-shadow:0 12px 30px rgba(0,0,0,.08);">
-
-<h3 style="font-size:24px;color:#071b33;margin-bottom:15px;">Illinois Service Areas</h3>
-
-<p>Serving Metro East Illinois and surrounding communities, including:</p>
-
-<ul style="margin-top:15px;padding-left:20px;color:#4b5563;">
-
-<li>Belleville</li>
-
-<li>O’Fallon, IL</li>
-
-<li>Edwardsville</li>
-
-<li>Collinsville</li>
-
-<li>Fairview Heights</li>
-
-<li>Glen Carbon</li>
-
-<li>Waterloo</li>
-
-<li>Columbia</li>
-
-<li>Nearby Illinois communities</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section style="background:#f7f8fb;">
-
-<div class="container">
-
-<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:25px;text-align:center;">
-
-<div style="background:white;padding:35px;border-top:5px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<strong style="display:block;font-size:42px;color:#c8102e;">A+</strong>
-
-<span style="font-weight:800;color:#071b33;text-transform:uppercase;">BBB Rated</span>
-
-</div>
-
-<div style="background:white;padding:35px;border-top:5px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<strong style="display:block;font-size:42px;color:#c8102e;">95%+</strong>
-
-<span style="font-weight:800;color:#071b33;text-transform:uppercase;">Referral-Based</span>
-
-</div>
-
-<div style="background:white;padding:35px;border-top:5px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<strong style="display:block;font-size:42px;color:#c8102e;">2</strong>
-
-<span style="font-weight:800;color:#071b33;text-transform:uppercase;">States Served</span>
-
-</div>
-
-<div style="background:white;padding:35px;border-top:5px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<strong style="display:block;font-size:42px;color:#c8102e;">100%</strong>
-
-<span style="font-weight:800;color:#071b33;text-transform:uppercase;">Licensed & Insured</span>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="reviews">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>What Customers Value</h2>
-
-<p>Our reputation is built on trust, communication, craftsmanship, and long-term relationships.</p>
-
-</div>
-
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:25px;">
-
-<div style="background:white;padding:30px;border-left:6px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<p style="font-style:italic;margin-bottom:15px;">"American Building Concepts exceeded our expectations. Honest pricing, no surprises, and high-quality work."</p>
-
-<strong>- Homeowner, St. Louis</strong>
-
-</div>
-
-<div style="background:white;padding:30px;border-left:6px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<p style="font-style:italic;margin-bottom:15px;">"They were upfront, professional, and delivered exactly what they promised."</p>
-
-<strong>- Residential Client</strong>
-
-</div>
-
-<div style="background:white;padding:30px;border-left:6px solid #c8102e;box-shadow:0 10px 25px rgba(0,0,0,.08);">
-
-<p style="font-style:italic;margin-bottom:15px;">"No hidden costs, no games. Just solid work and great communication from start to finish."</p>
-
-<strong>- Commercial Client</strong>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" style="background:#f7f8fb;">
-
-<div class="container">
-
-<div style="background:white;padding:45px;border-left:6px solid #c8102e;box-shadow:0 15px 35px rgba(0,0,0,.08);max-width:850px;margin:auto;">
-
-<div class="section-title" style="margin-bottom:30px;">
-
-<h2>Request a Free Consultation</h2>
-
-<p>Tell us about your project and we will follow up to discuss your goals, budget, timeline, and next steps.</p>
-
-</div>
-
-<form action="https://formspree.io/f/mrernobb" method="POST" style="display:grid;gap:15px;">
-
-<input type="text" name="name" placeholder="Your Name" required style="padding:16px;border:1px solid #ccc;font-size:16px;">
-
-<input type="tel" name="phone" placeholder="Phone Number" required style="padding:16px;border:1px solid #ccc;font-size:16px;">
-
-<input type="email" name="email" placeholder="Email Address" required style="padding:16px;border:1px solid #ccc;font-size:16px;">
-
-<input type="text" name="project_location" placeholder="Project City / Area" style="padding:16px;border:1px solid #ccc;font-size:16px;">
-
-<select name="project_type" required style="padding:16px;border:1px solid #ccc;font-size:16px;">
-
-<option value="">Project Type</option>
-
-<option value="Residential Remodeling">Residential Remodeling</option>
-
-<option value="Kitchen Remodeling">Kitchen Remodeling</option>
-
-<option value="Bathroom Remodeling">Bathroom Remodeling</option>
-
-<option value="Basement Finishing">Basement Finishing</option>
-
-<option value="Home Addition">Home Addition</option>
-
-<option value="New Construction">New Construction</option>
-
-<option value="Design-Build">Design-Build</option>
-
-<option value="Commercial Construction">Commercial Construction</option>
-
-<option value="Storm / Insurance Restoration">Storm / Insurance Restoration</option>
-
-<option value="ADA Accessibility Improvements">ADA Accessibility Improvements</option>
-
-<option value="Other">Other</option>
-
-</select>
-
-<select name="budget_range" style="padding:16px;border:1px solid #ccc;font-size:16px;">
-
-<option value="">Estimated Budget</option>
-
-<option value="Under $10,000">Under $10,000</option>
-
-<option value="$10,000 - $25,000">$10,000 - $25,000</option>
-
-<option value="$25,000 - $50,000">$25,000 - $50,000</option>
-
-<option value="$50,000 - $100,000">$50,000 - $100,000</option>
-
-<option value="$100,000 - $250,000">$100,000 - $250,000</option>
-
-<option value="$250,000+">$250,000+</option>
-
-</select>
-
-<textarea name="message" placeholder="Tell us about your project..." required style="padding:16px;border:1px solid #ccc;font-size:16px;min-height:140px;"></textarea>
-
-<button type="submit" style="background:#c8102e;color:white;border:none;padding:18px;font-size:16px;font-weight:800;text-transform:uppercase;cursor:pointer;">
-
-Request My Free Consultation
-
-</button>
-
-</form>
-
-<p style="text-align:center;margin-top:18px;color:#6b7280;">No pressure. No obligation. We respond quickly and professionally.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section style="background:#c8102e;color:white;">
-
-<div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:30px;">
-
-<div>
-
-<h2 style="font-size:36px;color:white;text-transform:uppercase;">Ready to Build With Confidence?</h2>
-
-<p style="font-size:18px;">Call now or request a consultation — honest pricing, professional planning, and no surprises.</p>
-
-</div>
-
-<a href="#contact" style="background:white;color:#c8102e;padding:16px 30px;font-weight:800;border-radius:4px;text-transform:uppercase;">Request Consultation</a>
-
-</div>
-
-</section>
-
-<footer style="background:#071b33;color:white;padding:55px 8% 25px;">
-
-<div class="container">
-
-<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:35px;">
-
-<div>
-
-<h3 style="border-bottom:2px solid #c8102e;padding-bottom:8px;margin-bottom:15px;">Contact</h3>
-
-<p style="color:#d1d5db;">
-
-Michael Knudsen<br>
-
-<a href="tel:3142033497" style="color:#d1d5db;">314-203-3497</a><br>
-
-<a href="mailto:mknudsen9067@yahoo.com" style="color:#d1d5db;">mknudsen9067@yahoo.com</a><br>
-
-abconceptsllc.com
-
-</p>
-
-</div>
-
-<div>
-
-<h3 style="border-bottom:2px solid #c8102e;padding-bottom:8px;margin-bottom:15px;">Credentials</h3>
-
-<p style="color:#d1d5db;">
-
-BBB A+ Rated & Accredited<br>
-
-Licensed & Insured<br>
-
-Serving Missouri & Illinois<br>
-
-Established September 28, 2021
-
-</p>
-
-</div>
-
-<div>
-
-<h3 style="border-bottom:2px solid #c8102e;padding-bottom:8px;margin-bottom:15px;">Services</h3>
-
-<p style="color:#d1d5db;">
-
-Residential Remodeling<br>
-
-Commercial Construction<br>
-
-Design-Build<br>
-
-Insurance Restoration<br>
-
-New Construction
-
-</p>
-
-</div>
-
-<div>
-
-<h3 style="border-bottom:2px solid #c8102e;padding-bottom:8px;margin-bottom:15px;">Service Areas</h3>
-
-<p style="color:#d1d5db;">
-
-Missouri & Illinois<br>
-
-St. Louis Region<br>
-
-Metro East Illinois<br>
-
-Surrounding Communities
-
-</p>
-
-</div>
-
-</div>
-
-<p style="color:#9ca3af;font-size:12px;text-align:center;margin-top:35px;line-height:1.6;">
-
-American Building Concepts LLC is a licensed and insured general contractor serving Missouri and Illinois, including St. Louis, St. Charles, Chesterfield, Ballwin, O’Fallon, Belleville, Edwardsville, Collinsville, Fairview Heights, Glen Carbon, Waterloo, Columbia, and surrounding communities. Services include residential remodeling, commercial construction, kitchen remodeling, bathroom renovations, basement finishing, additions, new construction, design-build construction, storm damage restoration, insurance restoration, ADA improvements, tenant improvements, retail build-outs, and general contracting throughout the greater St. Louis and Metro East region.
-
-</p>
-
-<div style="text-align:center;border-top:1px solid rgba(255,255,255,.2);margin-top:25px;padding-top:18px;color:#d1d5db;font-size:14px;">
-
-© 2025 American Building Concepts LLC. All Rights Reserved.
-
-</div>
-
-</div>
-
-</footer>
-
-<a href="tel:3142033497" style="position:fixed;right:18px;bottom:18px;background:#c8102e;color:white;padding:14px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.3);z-index:9999;">
-
-Call for Free Consultation
-
-</a>
-
-<style>
-
-@media(max-width:950px){
-
-.hero-wrap,
-
-section div[style*="grid-template-columns:1fr 1fr"],
-
-section div[style*="grid-template-columns:repeat(4,1fr)"],
-
-footer div[style*="grid-template-columns:repeat(4,1fr)"]{
-
-grid-template-columns:1fr!important;
-
-}
-
-.service-grid,
-
-section div[style*="grid-template-columns:repeat(3,1fr)"]{
-
-grid-template-columns:1fr 1fr!important;
-
-}
-
-.hero h2{
-
-font-size:44px;
-
-}
-
-nav{
-
-gap:18px;
-
-flex-wrap:wrap;
-
-}
-
-}
-
-@media(max-width:650px){
-
-.service-grid,
-
-section div[style*="grid-template-columns:repeat(3,1fr)"]{
-
-grid-template-columns:1fr!important;
-
-}
-
-.hero h2{
-
-font-size:34px;
-
-}
-
-header h1{
-
-font-size:30px;
-
-}
-
-section{
-
-padding:55px 6%;
-
-}
-
-a[style*="position:fixed"]{
-
-left:14px;
-
-right:14px;
-
-text-align:center;
-
-}
-
-}
-
-</style>
-
+  <header>
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <img src="logo.png" alt="American Building Concepts LLC Logo">
+        <div class="company-title">
+          <h1>American Building Concepts LLC</h1>
+          <p>Residential & Commercial Construction</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#bbb">BBB A+ Rating</a>
+        <a href="#process">Process</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Quality Construction Built on Trust, Detail, and Accountability</h2>
+      <p>
+        American Building Concepts LLC provides residential and commercial construction,
+        remodeling, additions, decks, permit support, and renovation services with a focus
+        on craftsmanship, transparency, and long-term value.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Request a Consultation</a>
+        <a href="#services" class="btn btn-secondary">View Services</a>
+      </div>
+    </div>
+  </section>
+    <section class="about" id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About American Building Concepts LLC</h2>
+        <p>
+          We help homeowners, property owners, and commercial clients move from idea to
+          finished project with clear communication, organized planning, and dependable execution.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            American Building Concepts LLC is a general contracting company serving residential
+            and light commercial construction needs. Our work includes remodeling, additions,
+            bathrooms, basements, decks, exterior improvements, tenant buildouts, commercial
+            renovations, and permit-related project planning.
+          </p>
+
+          <p>
+            We believe a successful project starts with realistic expectations, detailed scope
+            review, and a clear understanding of budget, code requirements, design goals, and
+            construction conditions before work begins.
+          </p>
+
+          <p>
+            Our goal is to provide clients with professional construction guidance, quality
+            craftsmanship, and a finished result that adds lasting value to the property.
+          </p>
+        </div>
+
+        <div class="trust-box">
+          <h3>Why Clients Choose Us</h3>
+          <ul>
+            <li>Licensed and insured general contractor</li>
+            <li>Residential and commercial construction experience</li>
+            <li>BBB Accredited Business with A+ rating</li>
+            <li>Detailed project planning and scope review</li>
+            <li>Quality-focused workmanship and communication</li>
+            <li>Permit and code-conscious project approach</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="services" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Construction Services</h2>
+        <p>
+          From residential remodeling to commercial improvements, we help organize the scope,
+          planning, and construction process from start to finish.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Residential Remodeling</h3>
+          <p>
+            Kitchen updates, bathroom remodels, basement finishing, whole-home improvements,
+            structural repairs, flooring, painting, trim, and interior upgrades.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Additions & Buildouts</h3>
+          <p>
+            Home additions, room expansions, second-floor improvements, layout changes,
+            framing, exterior tie-ins, and project planning for larger residential work.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Decks & Outdoor Living</h3>
+          <p>
+            Composite decks, wood decks, stairs, railings, covered decks, pergolas,
+            repairs, replacements, and outdoor living upgrades.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Commercial Renovations</h3>
+          <p>
+            Light commercial remodeling, tenant improvements, plaza exterior upgrades,
+            office spaces, storefront updates, and property improvement projects.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Permit Planning Support</h3>
+          <p>
+            Permit drawing coordination, scope narratives, existing and proposed layouts,
+            code-conscious planning, and documentation support for city or county review.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Insurance & Repair Work</h3>
+          <p>
+            Storm damage repairs, exterior repairs, siding, roofing coordination,
+            water-damage repairs, structural repair planning, and claim-related scope review.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="bbb-section" id="bbb">
+    <div class="container">
+      <div class="bbb-card">
+        <div class="bbb-logo-box">
+          <img src="bbb-logo.png" alt="BBB Accredited Business A+ Rating">
+        </div>
+
+        <div class="bbb-content">
+          <h2>BBB Accredited Business</h2>
+          <p>
+            American Building Concepts LLC is proud to be a BBB Accredited Business with an
+            A+ rating. We value professional communication, accountability, and trust with
+            every client and every project.
+          </p>
+
+          <p>
+            Our company is committed to providing construction services with integrity,
+            clear project expectations, and a focus on long-term customer satisfaction.
+          </p>
+
+          <span class="bbb-badge-text">BBB Accredited • A+ Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="process" id="process">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Project Process</h2>
+        <p>
+          A strong construction project depends on planning, communication, and clear expectations
+          before the work begins.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <span>1</span>
+          <h3>Consultation</h3>
+          <p>
+            We review your project goals, concerns, timeline, property conditions, and overall
+            expectations.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <span>2</span>
+          <h3>Scope Review</h3>
+          <p>
+            We identify the work involved, materials, code considerations, permit needs, and
+            possible construction challenges.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <span>3</span>
+          <h3>Proposal & Planning</h3>
+          <p>
+            We prepare a project scope, pricing approach, construction plan, and schedule
+            expectations for review.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <span>4</span>
+          <h3>Construction</h3>
+          <p>
+            We coordinate the work, communicate throughout the project, and focus on delivering
+            a finished result built to last.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-title">
+        <h2>Project Types We Handle</h2>
+        <p>
+          We work on residential and commercial projects that require careful planning,
+          dependable coordination, and quality construction.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="project-content">
+            <h3>Residential Remodels</h3>
+            <p>
+              Bathrooms, basements, kitchens, flooring, trim, painting, layout updates,
+              and full interior improvements.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="project-content">
+            <h3>Home Additions</h3>
+            <p>
+              Room additions, expanded living areas, structural repairs, exterior tie-ins,
+              framing, siding, roofing coordination, and permit planning.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="project-content">
+            <h3>Commercial Improvements</h3>
+            <p>
+              Office spaces, tenant improvements, storefront work, exterior upgrades,
+              plaza improvements, and light commercial construction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <h2>Contact American Building Concepts LLC</h2>
+        <p>
+          Ready to discuss a residential or commercial construction project?
+          Contact us to review your scope, goals, budget, and next steps.
+        </p>
+
+        <div class="contact-info">
+          <p><strong>Company:</strong> American Building Concepts LLC</p>
+          <p><strong>Email:</strong> mknudsen9067@yahoo.com</p>
+          <p><strong>Service Area:</strong> Missouri and Illinois</p>
+          <p><strong>Services:</strong> Residential & Commercial Construction, Remodeling, Additions, Decks, Permit Planning, and Repairs</p>
+        </div>
+
+        <a href="mailto:mknudsen9067@yahoo.com" class="btn btn-primary">Email Us Today</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>
+        &copy; 2026 <strong>American Building Concepts LLC</strong>. All Rights Reserved.
+      </p>
+      <p>
+        Residential & Commercial Construction | BBB Accredited Business with A+ Rating
+      </p>
+    </div>
+  </footer>
 </body>
-
 </html>
