@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>American Building Concepts LLC | Residential & Commercial Construction</title>
-
-  <meta name="description" content="American Building Concepts LLC provides residential and commercial construction, remodeling, additions, decks, bathrooms, basements, permit drawings, and light commercial renovation services in Missouri and Illinois." />
+  <meta name="description" content="American Building Concepts LLC provides residential and commercial construction, remodeling, additions, decks, bathrooms, basements, permit planning, and repair services in Missouri and Illinois.">
 
   <style>
     * {
@@ -17,9 +15,9 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
+      color: #1b1b1b;
+      background: #f5f5f5;
       line-height: 1.6;
-      color: #222;
-      background-color: #f7f7f7;
     }
 
     a {
@@ -29,54 +27,59 @@
 
     img {
       max-width: 100%;
-      height: auto;
       display: block;
     }
 
     .container {
       width: 90%;
-      max-width: 1200px;
+      max-width: 1150px;
       margin: 0 auto;
     }
 
-    header {
+    .top-bar {
       background: #111;
       color: #fff;
-      padding: 18px 0;
+      text-align: center;
+      padding: 10px 15px;
+      font-size: 15px;
+      font-weight: bold;
       border-bottom: 4px solid #c89b3c;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
     }
 
     .header-inner {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       gap: 20px;
+      padding: 18px 0;
       flex-wrap: wrap;
     }
 
-    .logo-wrap {
+    .brand {
       display: flex;
       align-items: center;
       gap: 15px;
     }
 
-    .logo-wrap img {
+    .brand img {
       width: 90px;
       height: auto;
-      background: #fff;
-      border-radius: 6px;
-      padding: 5px;
     }
 
-    .company-title h1 {
-      font-size: 26px;
+    .brand-text h1 {
+      font-size: 25px;
       line-height: 1.1;
-      letter-spacing: 0.5px;
+      color: #111;
     }
 
-    .company-title p {
+    .brand-text p {
       font-size: 14px;
-      color: #ddd;
+      color: #555;
       margin-top: 4px;
     }
 
@@ -89,7 +92,7 @@
     }
 
     nav a {
-      color: #fff;
+      color: #111;
     }
 
     nav a:hover {
@@ -98,7 +101,7 @@
 
     .hero {
       background:
-        linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+        linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
         url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80");
       background-size: cover;
       background-position: center;
@@ -110,55 +113,45 @@
     .hero h2 {
       font-size: 44px;
       line-height: 1.15;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .hero p {
       font-size: 20px;
       max-width: 850px;
-      margin: 0 auto 30px;
+      margin: 0 auto 28px;
       color: #f1f1f1;
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
-      padding: 13px 24px;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-
-    .btn-primary {
       background: #c89b3c;
       color: #111;
+      padding: 14px 24px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin: 5px;
     }
 
-    .btn-primary:hover {
+    .btn:hover {
       background: #e0b557;
     }
 
-    .btn-secondary {
-      border: 2px solid #fff;
+    .btn-dark {
+      background: #111;
       color: #fff;
     }
 
-    .btn-secondary:hover {
-      background: #fff;
-      color: #111;
+    .btn-dark:hover {
+      background: #333;
     }
-          section {
+        section {
       padding: 70px 0;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 38px;
     }
 
     .section-title h2 {
@@ -168,7 +161,7 @@
     }
 
     .section-title p {
-      max-width: 750px;
+      max-width: 760px;
       margin: 0 auto;
       color: #555;
       font-size: 17px;
@@ -178,68 +171,40 @@
       background: #fff;
     }
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 35px;
-      align-items: center;
+    .about-box {
+      background: #f7f7f7;
+      border-left: 6px solid #c89b3c;
+      padding: 34px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border-radius: 6px;
     }
 
-    .about-text p {
-      margin-bottom: 16px;
+    .about-box p {
       font-size: 17px;
       color: #333;
-    }
-
-    .trust-box {
-      background: #111;
-      color: #fff;
-      border-radius: 8px;
-      padding: 30px;
-      border-top: 5px solid #c89b3c;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.16);
-    }
-
-    .trust-box h3 {
-      font-size: 26px;
-      margin-bottom: 15px;
-      color: #c89b3c;
-    }
-
-    .trust-box ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .trust-box li {
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.15);
-    }
-
-    .trust-box li:last-child {
-      border-bottom: none;
+      margin-bottom: 16px;
     }
 
     .services {
-      background: #f2f2f2;
+      background: #f1f1f1;
     }
 
     .service-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      gap: 24px;
     }
 
     .service-card {
       background: #fff;
       padding: 28px;
-      border-radius: 8px;
+      border-radius: 6px;
+      border-top: 5px solid #c89b3c;
       box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      border-top: 4px solid #c89b3c;
     }
 
     .service-card h3 {
-      font-size: 22px;
+      font-size: 21px;
       margin-bottom: 12px;
       color: #111;
     }
@@ -249,58 +214,58 @@
       font-size: 16px;
     }
 
-    .bbb-section {
+    .bbb {
       background: #fff;
     }
 
-    .bbb-card {
+    .bbb-box {
       display: grid;
-      grid-template-columns: 220px 1fr;
+      grid-template-columns: 230px 1fr;
       gap: 30px;
       align-items: center;
       background: #f7f7f7;
-      border-radius: 10px;
       padding: 35px;
+      border-radius: 8px;
       border: 1px solid #ddd;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
 
-    .bbb-logo-box {
+    .bbb-logo {
       background: #fff;
-      border-radius: 8px;
       padding: 20px;
+      border-radius: 6px;
       border: 1px solid #ddd;
       text-align: center;
     }
 
-    .bbb-logo-box img {
+    .bbb-logo img {
+      max-width: 170px;
       margin: 0 auto;
-      max-width: 160px;
     }
 
     .bbb-content h2 {
-      font-size: 30px;
-      margin-bottom: 12px;
+      font-size: 31px;
       color: #111;
+      margin-bottom: 12px;
     }
 
     .bbb-content p {
-      color: #444;
       font-size: 17px;
+      color: #444;
       margin-bottom: 12px;
     }
 
-    .bbb-badge-text {
+    .badge {
       display: inline-block;
       background: #111;
       color: #fff;
-      padding: 8px 14px;
+      padding: 9px 15px;
+      border-left: 5px solid #c89b3c;
       border-radius: 4px;
       font-weight: bold;
       margin-top: 8px;
-      border-left: 5px solid #c89b3c;
     }
-          .process {
+        .process {
       background: #111;
       color: #fff;
     }
@@ -320,9 +285,9 @@
     }
 
     .process-step {
-      background: #1b1b1b;
+      background: #1c1c1c;
       padding: 25px;
-      border-radius: 8px;
+      border-radius: 6px;
       border: 1px solid rgba(255,255,255,0.12);
     }
 
@@ -336,7 +301,7 @@
       text-align: center;
       line-height: 38px;
       font-weight: bold;
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
     .process-step h3 {
@@ -356,12 +321,12 @@
     .project-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      gap: 24px;
     }
 
     .project-card {
       background: #f7f7f7;
-      border-radius: 8px;
+      border-radius: 6px;
       overflow: hidden;
       box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     }
@@ -379,6 +344,7 @@
     .project-content h3 {
       font-size: 21px;
       margin-bottom: 10px;
+      color: #111;
     }
 
     .project-content p {
@@ -387,23 +353,24 @@
     }
 
     .contact {
-      background: #f2f2f2;
+      background: #f1f1f1;
     }
 
     .contact-card {
       max-width: 850px;
       margin: 0 auto;
       background: #fff;
-      padding: 35px;
-      border-radius: 10px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      padding: 38px;
+      border-radius: 8px;
       text-align: center;
       border-top: 5px solid #c89b3c;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
     }
 
     .contact-card h2 {
       font-size: 32px;
       margin-bottom: 15px;
+      color: #111;
     }
 
     .contact-card p {
@@ -418,10 +385,6 @@
       line-height: 1.8;
     }
 
-    .contact-info strong {
-      color: #111;
-    }
-
     footer {
       background: #111;
       color: #ccc;
@@ -433,12 +396,7 @@
     footer strong {
       color: #fff;
     }
-          @media (max-width: 900px) {
-      .about-grid,
-      .bbb-card {
-        grid-template-columns: 1fr;
-      }
-
+        @media (max-width: 900px) {
       .service-grid,
       .project-grid {
         grid-template-columns: 1fr 1fr;
@@ -446,6 +404,11 @@
 
       .process-grid {
         grid-template-columns: 1fr 1fr;
+      }
+
+      .bbb-box {
+        grid-template-columns: 1fr;
+        text-align: center;
       }
 
       .hero h2 {
@@ -457,6 +420,11 @@
       .header-inner {
         justify-content: center;
         text-align: center;
+      }
+
+      .brand {
+        justify-content: center;
+        flex-direction: column;
       }
 
       nav {
@@ -481,7 +449,7 @@
         font-size: 17px;
       }
 
-      .company-title h1 {
+      .brand-text h1 {
         font-size: 22px;
       }
     }
@@ -489,11 +457,15 @@
 </head>
 
 <body>
+  <div class="top-bar">
+    BBB Accredited Business with A+ Rating | Licensed & Insured General Contractor
+  </div>
+
   <header>
     <div class="container header-inner">
-      <div class="logo-wrap">
+      <div class="brand">
         <img src="logo.png" alt="American Building Concepts LLC Logo">
-        <div class="company-title">
+        <div class="brand-text">
           <h1>American Building Concepts LLC</h1>
           <p>Residential & Commercial Construction</p>
         </div>
@@ -502,7 +474,7 @@
       <nav>
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#bbb">BBB A+ Rating</a>
+        <a href="#bbb">BBB</a>
         <a href="#process">Process</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
@@ -514,15 +486,12 @@
     <div class="container">
       <h2>Quality Construction Built on Trust, Detail, and Accountability</h2>
       <p>
-        American Building Concepts LLC provides residential and commercial construction,
-        remodeling, additions, decks, permit support, and renovation services with a focus
-        on craftsmanship, transparency, and long-term value.
+        Residential and commercial construction, remodeling, additions, decks,
+        permit planning, repairs, and renovation services for Missouri and Illinois.
       </p>
 
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Request a Consultation</a>
-        <a href="#services" class="btn btn-secondary">View Services</a>
-      </div>
+      <a href="#contact" class="btn">Request a Consultation</a>
+      <a href="#services" class="btn btn-dark">View Services</a>
     </div>
   </section>
     <section class="about" id="about">
@@ -530,53 +499,41 @@
       <div class="section-title">
         <h2>About American Building Concepts LLC</h2>
         <p>
-          We help homeowners, property owners, and commercial clients move from idea to
-          finished project with clear communication, organized planning, and dependable execution.
+          We help homeowners, property owners, and commercial clients move from idea
+          to completed project with organized planning and dependable execution.
         </p>
       </div>
 
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            American Building Concepts LLC is a general contracting company serving residential
-            and light commercial construction needs. Our work includes remodeling, additions,
-            bathrooms, basements, decks, exterior improvements, tenant buildouts, commercial
-            renovations, and permit-related project planning.
-          </p>
+      <div class="about-box">
+        <p>
+          American Building Concepts LLC is a general contracting company serving
+          residential and light commercial construction needs. Our work includes
+          remodeling, additions, bathrooms, basements, decks, exterior improvements,
+          tenant buildouts, commercial renovations, storm repairs, and permit-related
+          project planning.
+        </p>
 
-          <p>
-            We believe a successful project starts with realistic expectations, detailed scope
-            review, and a clear understanding of budget, code requirements, design goals, and
-            construction conditions before work begins.
-          </p>
+        <p>
+          We believe a successful project starts with realistic expectations, detailed
+          scope review, and a clear understanding of budget, code requirements, design
+          goals, and existing construction conditions before work begins.
+        </p>
 
-          <p>
-            Our goal is to provide clients with professional construction guidance, quality
-            craftsmanship, and a finished result that adds lasting value to the property.
-          </p>
-        </div>
-
-        <div class="trust-box">
-          <h3>Why Clients Choose Us</h3>
-          <ul>
-            <li>Licensed and insured general contractor</li>
-            <li>Residential and commercial construction experience</li>
-            <li>BBB Accredited Business with A+ rating</li>
-            <li>Detailed project planning and scope review</li>
-            <li>Quality-focused workmanship and communication</li>
-            <li>Permit and code-conscious project approach</li>
-          </ul>
-        </div>
+        <p>
+          Our goal is to provide professional construction guidance, quality workmanship,
+          clear communication, and a finished result that adds long-term value to the property.
+        </p>
       </div>
     </div>
   </section>
-    <section class="services" id="services">
+
+  <section class="services" id="services">
     <div class="container">
       <div class="section-title">
         <h2>Our Construction Services</h2>
         <p>
-          From residential remodeling to commercial improvements, we help organize the scope,
-          planning, and construction process from start to finish.
+          We handle residential and commercial projects that require careful planning,
+          reliable coordination, and quality construction.
         </p>
       </div>
 
@@ -584,16 +541,16 @@
         <div class="service-card">
           <h3>Residential Remodeling</h3>
           <p>
-            Kitchen updates, bathroom remodels, basement finishing, whole-home improvements,
-            structural repairs, flooring, painting, trim, and interior upgrades.
+            Bathrooms, basements, kitchens, flooring, painting, trim, repairs,
+            layout changes, and interior upgrades.
           </p>
         </div>
 
         <div class="service-card">
           <h3>Additions & Buildouts</h3>
           <p>
-            Home additions, room expansions, second-floor improvements, layout changes,
-            framing, exterior tie-ins, and project planning for larger residential work.
+            Home additions, room expansions, framing, exterior tie-ins, structural
+            repair planning, and larger residential improvements.
           </p>
         </div>
 
@@ -601,57 +558,54 @@
           <h3>Decks & Outdoor Living</h3>
           <p>
             Composite decks, wood decks, stairs, railings, covered decks, pergolas,
-            repairs, replacements, and outdoor living upgrades.
+            repairs, replacements, and outdoor upgrades.
           </p>
         </div>
-
-        <div class="service-card">
+                <div class="service-card">
           <h3>Commercial Renovations</h3>
           <p>
-            Light commercial remodeling, tenant improvements, plaza exterior upgrades,
-            office spaces, storefront updates, and property improvement projects.
+            Tenant improvements, office spaces, storefront updates, plaza exterior
+            upgrades, light commercial remodeling, and property improvements.
           </p>
         </div>
 
         <div class="service-card">
           <h3>Permit Planning Support</h3>
           <p>
-            Permit drawing coordination, scope narratives, existing and proposed layouts,
-            code-conscious planning, and documentation support for city or county review.
+            Scope narratives, permit drawing coordination, existing and proposed layouts,
+            code-conscious planning, and city or county documentation support.
           </p>
         </div>
 
         <div class="service-card">
           <h3>Insurance & Repair Work</h3>
           <p>
-            Storm damage repairs, exterior repairs, siding, roofing coordination,
-            water-damage repairs, structural repair planning, and claim-related scope review.
+            Storm damage repairs, siding, exterior repairs, water-damage repairs,
+            roofing coordination, structural repair review, and claim-related scope support.
           </p>
         </div>
       </div>
     </div>
   </section>
-    <section class="bbb-section" id="bbb">
+
+  <section class="bbb" id="bbb">
     <div class="container">
-      <div class="bbb-card">
-        <div class="bbb-logo-box">
+      <div class="bbb-box">
+        <div class="bbb-logo">
           <img src="bbb-logo.png" alt="BBB Accredited Business A+ Rating">
         </div>
 
         <div class="bbb-content">
           <h2>BBB Accredited Business</h2>
           <p>
-            American Building Concepts LLC is proud to be a BBB Accredited Business with an
-            A+ rating. We value professional communication, accountability, and trust with
-            every client and every project.
+            American Building Concepts LLC is proud to be a BBB Accredited Business
+            with an A+ rating.
           </p>
-
           <p>
-            Our company is committed to providing construction services with integrity,
-            clear project expectations, and a focus on long-term customer satisfaction.
+            We value professional communication, accountability, integrity, and trust
+            with every client and every project.
           </p>
-
-          <span class="bbb-badge-text">BBB Accredited • A+ Rating</span>
+          <span class="badge">BBB Accredited • A+ Rating</span>
         </div>
       </div>
     </div>
@@ -661,8 +615,8 @@
       <div class="section-title">
         <h2>Our Project Process</h2>
         <p>
-          A strong construction project depends on planning, communication, and clear expectations
-          before the work begins.
+          A strong construction project depends on planning, communication,
+          and clear expectations before the work begins.
         </p>
       </div>
 
@@ -671,8 +625,8 @@
           <span>1</span>
           <h3>Consultation</h3>
           <p>
-            We review your project goals, concerns, timeline, property conditions, and overall
-            expectations.
+            We review your project goals, concerns, timeline, property conditions,
+            and overall expectations.
           </p>
         </div>
 
@@ -680,8 +634,8 @@
           <span>2</span>
           <h3>Scope Review</h3>
           <p>
-            We identify the work involved, materials, code considerations, permit needs, and
-            possible construction challenges.
+            We identify the work involved, materials, code considerations,
+            permit needs, and possible construction challenges.
           </p>
         </div>
 
@@ -689,8 +643,8 @@
           <span>3</span>
           <h3>Proposal & Planning</h3>
           <p>
-            We prepare a project scope, pricing approach, construction plan, and schedule
-            expectations for review.
+            We prepare a project scope, pricing approach, construction plan,
+            and schedule expectations for review.
           </p>
         </div>
 
@@ -698,8 +652,8 @@
           <span>4</span>
           <h3>Construction</h3>
           <p>
-            We coordinate the work, communicate throughout the project, and focus on delivering
-            a finished result built to last.
+            We coordinate the work, communicate throughout the project, and focus
+            on delivering a finished result built to last.
           </p>
         </div>
       </div>
@@ -721,8 +675,8 @@
           <div class="project-content">
             <h3>Residential Remodels</h3>
             <p>
-              Bathrooms, basements, kitchens, flooring, trim, painting, layout updates,
-              and full interior improvements.
+              Bathrooms, basements, kitchens, flooring, trim, painting,
+              layout updates, and full interior improvements.
             </p>
           </div>
         </div>
@@ -732,8 +686,8 @@
           <div class="project-content">
             <h3>Home Additions</h3>
             <p>
-              Room additions, expanded living areas, structural repairs, exterior tie-ins,
-              framing, siding, roofing coordination, and permit planning.
+              Room additions, expanded living areas, framing, siding,
+              roofing coordination, structural repairs, and permit planning.
             </p>
           </div>
         </div>
@@ -743,8 +697,8 @@
           <div class="project-content">
             <h3>Commercial Improvements</h3>
             <p>
-              Office spaces, tenant improvements, storefront work, exterior upgrades,
-              plaza improvements, and light commercial construction.
+              Office spaces, tenant improvements, storefront work,
+              exterior upgrades, plaza improvements, and light commercial construction.
             </p>
           </div>
         </div>
@@ -767,7 +721,7 @@
           <p><strong>Services:</strong> Residential & Commercial Construction, Remodeling, Additions, Decks, Permit Planning, and Repairs</p>
         </div>
 
-        <a href="mailto:mknudsen9067@yahoo.com" class="btn btn-primary">Email Us Today</a>
+        <a href="mailto:mknudsen9067@yahoo.com" class="btn">Email Us Today</a>
       </div>
     </div>
   </section>
@@ -783,5 +737,4 @@
     </div>
   </footer>
 </body>
-  <!-- deployment refresh -->
 </html>
